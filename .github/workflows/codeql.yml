@@ -79,8 +79,9 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '17'
-    - name: Building project    
+    
     - run: |
+        echo "Building project"
         cd WebGoat-main
         chmod +x mvnw
         ./mvnw clean install
