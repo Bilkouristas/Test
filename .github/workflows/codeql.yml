@@ -39,8 +39,11 @@ jobs:
         languages: ${{ matrix.language }}
         queries: security-extended, security-experimental, security-and-quality
       
-    - name: Build with Maven
-      run: mvn -DskipTests=true install
+    - name: Install Dependencies 
+        run: |
+          cd WebGoat-main
+          chmod +x mvnw
+          ./mvnw clean install
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
