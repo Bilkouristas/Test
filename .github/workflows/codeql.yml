@@ -80,7 +80,6 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
     - run: |
-        echo "Run, Build Application using script"
         cd WebGoat-main
         chmod +x mvnw
         ./mvnw clean install
