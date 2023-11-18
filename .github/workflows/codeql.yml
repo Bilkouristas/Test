@@ -40,7 +40,7 @@ jobs:
         queries: security-extended, security-experimental, security-and-quality
       
     - name: Install Dependencies 
-        run: |
+       run: |
           cd WebGoat-main
           chmod +x mvnw
           ./mvnw clean install
