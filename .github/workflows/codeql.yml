@@ -69,7 +69,7 @@ jobs:
 
     - run: |
         echo "Run, Build Application using script"
-        cd WebGoat
+        cd WebGoat-main
         chmod +x mvnw
         ./mvnw clean install
         ./mvnw spring-boot:run &
