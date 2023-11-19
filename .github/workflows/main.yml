@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Dependencies 
         run: |
-          cd WebGoat
+          cd WebGoat-main
           chmod +x mvnw
           ./mvnw clean install
 
