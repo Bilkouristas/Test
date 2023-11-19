@@ -8,6 +8,7 @@ on:
 
 jobs:
   Build-and-Test:  
+    permissions: write-all
     name: Build-and-Test 
     runs-on: ubuntu-latest
     steps:
